@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto mt-2">
+        <div class="w-[390px] h-[40px] mx-auto">
+            <form class="flex items-center justify-center ">
+                <input id="textInput" type="text" class="px-[8px] flex-1 h-[40px] outline-none border"  />
+                <button id="saveBtn" type="submit" class="w-[40px] h-[40px] bg-[#13E328] "><i class="fa fa-plus text-white"></i></button>
+            </form>
+            <div class="flex items-center justify-between gap-[10px] mt-3">
+                <button id="allBtn" class="border bg-[#8F8F8F] w-full rounded-[6px] h-[30px] text-white">All</button>
+                <button id="completedBtn" class="border w-full rounded-[6px] h-[30px] ">Completed</button>
+                <button id="pendingBtn" class="border w-full rounded-[6px] h-[30px] ">Pending</button>
+
+            </div>
+            <div class="w-full mt-[13px]" id="taskList">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
